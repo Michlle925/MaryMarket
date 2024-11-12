@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ÿ»Ìﬁ ”Ê»— „«—ﬂ </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>”Ê»— „«—ﬂ </h1>
+        <nav>
+            <ul>
+                <li><a href="#products">«·„‰ Ã« </a></li>
+                <li><a href="#cart-container">«·”·…</a></li>
+                <li><a href="#contact">«· Ê«’·</a></li>
+                <li><a href="#social-media">«·”Ê‘Ì«· „ÌœÌ«</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ﬁ”„ «·›· —… -->
+        <section id="filter">
+            <label for="category-filter">›· —… «·„‰ Ã« :</label>
+            <select id="category-filter">
+                <option value="all">«·ﬂ·</option>
+                <option value="dairy">√·»«‰</option>
+                <option value="meat">·ÕÊ„</option>
+                <option value="snacks">”‰«ﬂ”</option>
+            </select>
+        </section>
+
+        <!-- ﬁ”„ «·„‰ Ã«  -->
+        <section id="products">
+            <h2>«·„‰ Ã« </h2>
+            <div id="products-list" class="products-list"></div>
+        </section>
+
+        <!-- ﬁ”„ «·”·… -->
+        <section id="cart-container" class="cart-container">
+            <h2>«·”·…</h2>
+            <ul id="cart-items"></ul>
+            <p id="cart-total">≈Ã„«·Ì: 0 Ã‰ÌÂ</p>
+            <button onclick="checkout()">≈ „«„ «·œ›⁄</button>
+            <button onclick="toggleCart()">≈Œ›«¡ «·”·…</button>
+        </section>
+
+        <!-- ﬁ”„ «·‘«  -->
+        <section id="chat-container" class="chat-container">
+            <div class="chat-header">
+                <h3>Œœ„… «·⁄„·«¡</h3>
+                <button onclick="closeChat()">≈€·«ﬁ</button>
+            </div>
+            <div class="chat-body"></div>
+            <input type="text" id="chat-input" placeholder="√œŒ· —”«· ﬂ...">
+            <button onclick="sendMessage()">≈—”«·</button>
+        </section>
+
+        <!-- ﬁ”„ «· Ê«’· -->
+        <section id="contact">
+            <h2>«· Ê«’· „⁄‰«</h2>
+            <p>—ﬁ„ «·Â« ›: 123-456-7890</p>
+            <p>—ﬁ„ «·‘ﬂ«ÊÏ: 987-654-3210</p>
+        </section>
+
+        <!-- ﬁ”„ ’›Õ«  «·”Ê‘Ì«· „ÌœÌ« -->
+        <section id="social-media">
+            <h2>’›Õ«  «·”Ê‘Ì«· „ÌœÌ«</h2>
+            <a href="https://www.facebook.com" target="_blank">›Ì”»Êﬂ</a> |
+            <a href="https://twitter.com" target="_blank"> ÊÌ —</a> |
+            <a href="https://www.instagram.com" target="_blank">≈‰” «Ã—«„</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ”Ê»— „«—ﬂ . Ã„Ì⁄ «·ÕﬁÊﬁ „Õ›ÊŸ….</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
